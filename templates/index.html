@@ -10,19 +10,28 @@
     <body>
         <header class="header">
             <div class="header__utilities">
+                <i class="bx bx-search"></i>
                 <form class="search" role="search">
-                    <label for="search-input" class="visually-hidden">Search</label>
-                    <i class="bx bx-search"></i>
                     <input type="text" id="search-input" placeholder="Search...">
                 </form>
-                <div class="profile"></div>
+                <i class="bx bx-bell"></i>
+                <div class="profile">
+                    <img class="pfp small-profile" src="../static/images/profiles/pfp1.jpeg" alt="Walter White skating">
+                </div>
+                <h3>Walter White</h3>
             </div>
             <div class="header__context">
-                <div class="greeting">Hi there, Morgan Oakley (@morgan)</div>
+                <div class="greeting">
+                    <img class="pfp big-profile" src="../static/images/profiles/pfp1.jpeg" alt="Walter White skating">
+                    <div class="greeting-text">
+                        <p>Hi there,</p>
+                        <h3>Morgan Oakley (@morgan)</h3>
+                    </div>
+                </div>
                 <div class="actions" role="toolbar" aria-label="Primary actions">
-                    <button>New</button>
-                    <button>Upload</button>
-                    <button>Share</button>
+                    <button class="btn">New</button>
+                    <button class="btn">Upload</button>
+                    <button class="btn">Share</button>
                 </div>
             </div>
         </header>
@@ -35,49 +44,58 @@
                 <ul class="nav-main">
                     <li>
                         <a href="#">
-                            <i class="bx bxs-home"></i> Home
+                            <i class="bx bxs-home"></i>
+                            Home
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="bx bxs-user"></i> Profile
+                            <i class="bx bxs-user"></i>
+                            Profile
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="bx bxs-message-dots"></i> Messages
+                            <i class="bx bxs-message-dots"></i>
+                            Messages
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="bx bxs-time-five"></i> History
+                            <i class="bx bxs-time-five"></i>
+                            History
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="bx bxs-check-square"></i> Tasks
+                            <i class="bx bxs-check-square"></i>
+                            Tasks
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="bx bxs-group"></i> Communities
+                            <i class="bx bxs-group"></i>
+                            Communities
                         </a>
                     </li>
                 </ul>
                 <ul class="nav-user">
                     <li>
                         <a href="#">
-                            <i class="bx bxs-cog"></i> Settings
+                            <i class="bx bxs-cog"></i>
+                            Settings
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="bx bxs-help-circle"></i> Support
+                            <i class="bx bxs-help-circle"></i>
+                            Support
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="bx bxs-lock-alt"></i> Privacy
+                            <i class="bx bxs-lock-alt"></i>
+                            Privacy
                         </a>
                     </li>
                 </ul>
