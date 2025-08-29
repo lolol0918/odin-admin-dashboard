@@ -347,15 +347,36 @@ li>a {
 
 .right-column .cards {
   background-color: var(--color-card);
-  padding: var(--space-xl) var(--space-lg);
+  padding: var(--space-md) var(--space-sm);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-md);
 }
 
 .announcement-card {
-  padding: var(--space-sm);
+  padding: var(--space-md);
 }
 
 .announcement-card p {
   color: var(--color-text-gray);
+  font-size: var(--font-size-sm);
+}
+
+.announcement-card h3 {
+  font-size: var(--font-size-md);
+}
+
+.trending-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.trending-info h4 {
+  font-weight: var(--font-weight-bold);
+}
+
+.trending-info p {
+  color: var(--color-text-gray);
+  font-size: var(--font-size-sm);
 }
