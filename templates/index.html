@@ -1,12 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="../static/styles/style.css">
-</head>
-<body>
-    wao
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin Dashboard</title>
+        <link rel="stylesheet" href="../static/styles/style.css">
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__utilities">
+                <form class="search" role="search">
+                    <label for="search-input" class="visually-hidden">Search</label>
+                    <i class="bx bx-search"></i>
+                    <input type="text" id="search-input" placeholder="Search...">
+                </form>
+                <div class="profile"></div>
+            </div>
+            <div class="header__context">
+                <div class="greeting">Hi there, Morgan Oakley (@morgan)</div>
+                <div class="actions" role="toolbar" aria-label="Primary actions">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
+            </div>
+        </header>
+        <aside class="sidebar">
+            <header class="sidebar-header">
+                <i class="bx bxs-dashboard"></i>
+                Dashboard
+            </header>
+            <nav class="navbar">
+                <ul class="nav-main">
+                    <li>
+                        <a href="#">
+                            <i class="bx bxs-home"></i> Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bx bxs-user"></i> Profile
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bx bxs-message-dots"></i> Messages
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bx bxs-time-five"></i> History
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bx bxs-check-square"></i> Tasks
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bx bxs-group"></i> Communities
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav-user">
+                    <li>
+                        <a href="#">
+                            <i class="bx bxs-cog"></i> Settings
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bx bxs-help-circle"></i> Support
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bx bxs-lock-alt"></i> Privacy
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-section">
+            <section class="card-section projects">
+                <h2>Your Projects</h2>
+                <div class="cards">
+                    <div class="project-card">
+                        <h3>Super Cool Project</h3>
+                        <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Impossible App</h3>
+                        <p>In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Ad Blocker</h3>
+                        <p>Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Less Cool Project</h3>
+                        <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Easy Peasy App</h3>
+                        <p>Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam. Curabitur dignissim nisi in tortor commodo.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Money Maker</h3>
+                        <p>Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex.</p>
+                    </div>
+                </div>
+            </section>
+            <div class="right-column">
+                <section class="card-section announcements">
+                    <h2>Announcements</h2>
+                    <div class="cards">
+                        <div class="announcement-card">
+                            <h3>Site Maintenance</h3>
+                            <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue.</p>
+                        </div>
+                        <hr>
+                        <div class="announcement-card">
+                            <h3>Community Share Day</h3>
+                            <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan porttitor.</p>
+                        </div>
+                        <hr>
+                        <div class="announcement-card">
+                            <h3>Updated Privacy Policy</h3>
+                            <p>Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis sem in mattis.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="card-section trending">
+                    <h2>Trending</h2>
+                    <div class="cards">
+                        <div class="trending-item">
+                            <div class="avatar">R</div>
+                            <div class="trending-info">
+                                <h4>@regan</h4>
+                                <p>World Peace Builder</p>
+                            </div>
+                        </div>
+                        <div class="trending-item">
+                            <div class="avatar">M</div>
+                            <div class="trending-info">
+                                <h4>@morgan</h4>
+                                <p>Super Cool Project</p>
+                            </div>
+                        </div>
+                        <div class="trending-item">
+                            <div class="avatar">K</div>
+                            <div class="trending-info">
+                                <h4>@kendall</h4>
+                                <p>Life Changing App</p>
+                            </div>
+                        </div>
+                        <div class="trending-item">
+                            <div class="avatar">A</div>
+                            <div class="trending-info">
+                                <h4>@alex</h4>
+                                <p>No Traffic Maker</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </body>
 </html>

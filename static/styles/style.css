@@ -23,7 +23,7 @@
 
   /* Text colors */
   --color-text-dark: #222222;
-  --color-text-light: #555555;
+  --color-text-light: #ffffff;
 
 
   /* 📐 Spacing scale (8px system for consistency) */
@@ -55,4 +55,131 @@
   --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
   --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
   --shadow-lg: 0 10px 15px rgba(0,0,0,0.15);
+}
+
+body > * {
+  border: 2px solid red;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li > a {
+  color: inherit;
+  text-decoration: none;
+  font-size: var(--font-size-base);
+}
+.sidebar {
+  grid-area: 1 / 1 / -3 / 2;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  background-color: var(--color-primary);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-light);
+}
+
+.sidebar > * {
+  padding: var(--space-sm) var(--space-sm);
+}
+
+/* Shared icon width */
+.sidebar i {
+  flex: 0 0 3rem;       /* same width box for all icons */
+  text-align: center;   /* center icon inside */
+}
+
+/* Header (Dashboard) */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.sidebar-header i {
+  font-size: 1.75rem;   /* bigger icon but same box width */
+}
+
+/* Nav links */
+.nav-main a,
+.nav-user a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+.nav-main i,
+.nav-user i {
+  font-size: 1.25rem;   /* smaller icons, same width box */
+}
+
+
+.sidebar-header > i {
+  font-size: 3rem;
+}
+.sidebar-header {
+  font-size: var(--font-size-xl);
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  display: grid;
+  gap: var(--space-xxl);
+}
+
+.nav-user, .nav-main {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.nav-main i, .nav-user i {
+  font-size: var(--font-size-lg);
+}
+
+.nav-user > li > a, .nav-main > li > a {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-weight: var(--font-weight-bold);
+  
+}
+
+
+.main-section > * {
+  border: 3px solid blue;
+}
+
+.main-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.project-card {
+  border: 2px solid green;
+}
+
+.projects {
+  padding: var(--space-md);
+}
+
+.projects > .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
 }
