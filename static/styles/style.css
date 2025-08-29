@@ -31,6 +31,7 @@
   /* Text colors */
   --color-text-dark: #222222;
   --color-text-light: #ffffff;
+  --color-text-gray: #6b7280; 
 
 
   /* 📐 Spacing scale (8px system for consistency) */
@@ -174,21 +175,31 @@ li>a {
 
 .main-section {
   display: grid;
+  background-color: var(--color-bg-alt);
   grid-template-columns: 2fr 1fr;
 }
 
+.main-section > * {
+  margin: var(--space-sm) var(--space-md);
+}
+
 .project-card {
-  border: 2px solid green;
+  background-color: var(--color-card);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  border-left: 5px solid var(--color-accent);
 }
 
-.projects {
-  padding: var(--space-md);
-}
-
-.projects>.cards {
+.projects > .cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 16px;
+  grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+  gap: var(--space-md);
+}
+
+
+.projects > * {
+  margin: var(--space-sm) var(--space-md);
 }
 
 .right-column {
@@ -285,4 +296,37 @@ li>a {
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-bold);
   cursor: pointer;
+}
+
+.project-card {
+  padding:  var(--space-lg);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--space-xl);
+}
+
+.project-content > * {
+  margin: var(--space-xs) 0;
+}
+
+.project-content > p {
+  color: var(--color-text-gray);
+}
+
+.icon-bar {
+  justify-self: flex-end;
+  align-self: flex-end;
+  display: flex;
+  gap: 1rem; /* space between icons */
+  font-size: 1.5rem; /* make icons larger */
+  color: #333; /* default color */
+}
+
+.icon-bar i {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.icon-bar i:hover {
+  color: #0077ff; /* highlight on hover */
 }
